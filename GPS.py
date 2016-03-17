@@ -7,6 +7,8 @@ import serial
 import time
 import RPi.GPIO as GPIO
 
+
+
 ser = serial.Serial("/dev/ttyUSB0",9600)
 ser.timeout = 3
 if ser.isOpen():
