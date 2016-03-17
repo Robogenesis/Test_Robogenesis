@@ -11,6 +11,7 @@ import RPi.GPIO as GPIO
 
 ser = serial.Serial("/dev/ttyUSB0",9600)
 ser.timeout = 3
+
 if ser.isOpen():
     print(ser.name + ' is open...')
 #gps = "$GPGGA,32,153404.000,A,1912.827725,N,7250.504141,E,0.00,0.00,060316,,E,A"
